@@ -20,3 +20,8 @@ By default, only xmllint is run.  Tidy can resolve more feed problems, but makes
 To run the tools, they must be in your web server's $PATH.
 
 When enabled, the selected tools will be run on ALL feeds when they update.
+
+License
+-------
+
+GPLv3
