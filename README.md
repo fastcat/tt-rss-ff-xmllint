@@ -1,7 +1,7 @@
 Tiny Tiny RSS: ff_xmllint
 =================
 
-Tiny Tiny RSS plugin to run xmllint and/or tidy
+Tiny Tiny RSS plugin to run xmllint and/or tidy on feed content to deal with mostly sane but not quite valid feeds.
 
 Installation
 ------------
