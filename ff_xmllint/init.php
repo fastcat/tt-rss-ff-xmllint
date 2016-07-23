@@ -99,7 +99,7 @@ class Ff_XmlLint extends Plugin {
 		$lintEnabled = sql_bool_to_bool($this->host->get($this, "lint", bool_to_sql_bool(TRUE)));
 		
 		if ($tidyEnabled) {
-			$process = proc_open('tidy --xml -', $descriptorspec, $pipes);
+			$process = proc_open('sponge | tidy --xml -', $descriptorspec, $pipes);
 			
 			if (is_resource($process)) {
 				fwrite($pipes[0], $feed_data);
@@ -114,7 +114,7 @@ class Ff_XmlLint extends Plugin {
 		}
 		
 		if ($lintEnabled) {
-			$process = proc_open('xmllint --recover -', $descriptorspec, $pipes);
+			$process = proc_open('sponge | xmllint --recover -', $descriptorspec, $pipes);
 			
 			if (is_resource($process)) {
 				fwrite($pipes[0], $feed_data);
