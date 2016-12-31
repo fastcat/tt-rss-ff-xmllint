@@ -1,6 +1,6 @@
 <?php
 
-// LATEST VERSION: https://github.com/Churten/tt-rss-ff-xmllint
+// LATEST VERSION: https://github.com/fastcat/tt-rss-ff-xmllint
 
 // to use this:
 // create a directory ff_xmllint in <tt-rss>/plugins/
