@@ -88,7 +88,7 @@ class Ff_XmlLint extends Plugin {
 		print "</div>"; #pane
 	}
 	
-	function hook_feed_fetched($feed_data) {
+	function hook_feed_fetched($feed_data, $fetch_url, $owner_uid, $feed) {
 		$descriptorspec = array(
 			0 => array("pipe", "r"),
 			1 => array("pipe", "w"),
