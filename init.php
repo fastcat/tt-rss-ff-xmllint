@@ -11,7 +11,7 @@ class Ff_XmlLint extends Plugin {
 	private $host;
 
 	function about() {
-		return array(1.1,
+		return array(1.2,
 			"XmlLint",
 			"cheetah@fastcat.org",
 			false);
