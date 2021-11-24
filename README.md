@@ -8,6 +8,13 @@ Installation
 
 * Simple install for Debian and Ubuntu:
   * Run sudo make install (it will check to ensure you have tidy and xmllint installed).
+* Git clone install:
+  * Install dependencies (see manual install)
+  * Clone repository
+```
+cd /var/www/ttrss
+git clone https://github.com/fastcat/tt-rss-ff-xmllint.git plugins.local/ff_xmllint
+```
 * Manual Install:
   * Make sure tidy is installed
   * Make sure xmllint is installed

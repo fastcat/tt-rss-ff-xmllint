@@ -11,7 +11,7 @@ class Ff_XmlLint extends Plugin {
 	private $host;
 
 	function about() {
-		return array(1.1,
+		return array(1.2,
 			"XmlLint",
 			"cheetah@fastcat.org",
 			false);
@@ -88,7 +88,7 @@ class Ff_XmlLint extends Plugin {
 		print "</div>"; #pane
 	}
 	
-	function hook_feed_fetched($feed_data) {
+	function hook_feed_fetched($feed_data, $fetch_url, $owner_uid, $feed) {
 		$descriptorspec = array(
 			0 => array("pipe", "r"),
 			1 => array("pipe", "w"),

@@ -11,6 +11,6 @@ checkdeps:
 
 install: checkdeps
 	install -d /usr/share/tt-rss/www/plugins/ff_xmllint
-	install -m 644 ff_xmllint/init.php /usr/share/tt-rss/www/plugins/ff_xmllint/
+	install -m 644 init.php /usr/share/tt-rss/www/plugins/ff_xmllint/
 
 .PHONY: all checkdeps install
