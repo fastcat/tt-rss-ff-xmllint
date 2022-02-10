@@ -56,14 +56,10 @@ class Ff_XmlLint extends Plugin {
 		print "<script type=\"dojo/method\" event=\"onSubmit\" args=\"evt\">
 			evt.preventDefault();
 			if (this.validate()) {
-				console.log(dojo.objectToQuery(this.getValues()));
-				new Ajax.Request('backend.php', {
-					parameters: dojo.objectToQuery(this.getValues()),
-					onComplete: function(transport) {
-						notify_info(transport.responseText);
-					}
+				console.log(this.getValues());
+				xhr.post('backend.php', this.getValues(), (reply) => {
+					Notify.info(reply);
 				});
-				//this.reset();
 			}
 			</script>";
 
